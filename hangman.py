@@ -177,8 +177,6 @@ def main():
         while (play_again != "yes") and (play_again != "no"):
             play_again = input("Invalid answer, do you wish to play again? Answer yes or no\n").lower
         
-        if play_again == "yes":
-            continue
-        else:
+        if play_again == "no":
             messages.end_game_calculate_stats(player_wins, computer_wins, game_ties)
             playing_game = False
