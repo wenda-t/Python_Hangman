@@ -93,26 +93,23 @@ def computer_turn(unchosen: list, chosen: list, word: str) -> tuple[bool, str]:
 
     chosen.append(letter_guess)
     unchosen.remove(letter_guess)
-
     in_word = letter_in_word(word, letter_guess)
 
     return in_word, letter_guess
 
 
 def main():
-    # Variables: default lives set to 8
-    playing_game = True
+    """The main function. Runs the game using other functions until user decides to stop playing."""
 
+    playing_game = True
+    
     # Outer: Will keep going as long as player wants to play, Inner: For 1 game of hangman 
     while playing_game:
         unchosen_letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
                             "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
         chosen_letters = []
-        player_lives = 8
-        computer_lives = 8
-        player_wins = 0
-        computer_wins = 0
-        game_ties = 0
+        player_lives, computer_lives = 8, 8
+        player_wins, computer_wins, game_ties = 0, 0, 0
         game_word = randomization.generate_random_word()
         game_word_secret = hide_word(game_word)
         starter = starting_user()
