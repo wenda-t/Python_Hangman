@@ -2,4 +2,8 @@ import randomization
 import messages
 import hangman
 
-hangman.main()
+def main():
+    hangman.main()
+
+if __name__ == "__main__":
+    main()
