@@ -121,8 +121,7 @@ def main():
     # Outer (playing_game): Will keep going as long as player wants to play. 
     # Inner loop: For 1 game of hangman 
     while playing_game:
-        # Starter variables. List of all possible letters, default lives, default score, 
-        # generating random word and making it a secret, and choosing starting player. 
+        # Starter variables. List of all possible letters, starting chances, getting word, getting start user
         unchosen_letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
                             "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
         chosen_letters = []
