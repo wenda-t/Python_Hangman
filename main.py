@@ -1,9 +1,5 @@
-import randomization
-import messages
 import hangman
 
-def main():
-    hangman.main()
+# Just call the hangman main function and we're good to go.
 
-if __name__ == "__main__":
-    main()
+hangman.main()
