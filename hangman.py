@@ -7,10 +7,7 @@ import random
 
 def hide_word(word: str) -> str:
     """Takes the word and replaces letters with "-" for our game"""
-    secret_word = ""
-
-    for i in range(len(word)):
-        secret_word += "-"
+    secret_word = "-" * len(word) 
         
     return secret_word
 
@@ -191,7 +188,7 @@ def main():
                     full_word = word_gussed(game_word, game_word_secret)
 
                     if full_word:
-                        print(f"Computer has gussed the word{game_word}")
+                        print(f"Computer has gussed the word {game_word}")
                         winner = "computer"
                         break
                     else:
