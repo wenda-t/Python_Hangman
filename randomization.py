@@ -8,8 +8,7 @@ def generate_random_word() -> str:
         list_of_words = file.readlines()
         words = list_of_words[0].split()
 
-    random_int = random.randint(0, len(words) - 1)
-    return words[random_int]
+    return random.choice(words)
 
 
 def starter_player() -> bool:

@@ -7,7 +7,7 @@ def print_welcome() -> None:
 
 def end_game_calculate_stats(player_wins: int, computer_wins: int, ties: int) -> None:
     """End of game message and prints the stats of the game session."""
-    print("Thank you for playing Hangman! Your stats are below:")
+    print("\nThank you for playing Hangman! Your stats are below:")
     print(f"Games Won: {player_wins}")
     print(f"Games Loss: {computer_wins}")
     print(f"Games Tied: {ties}")
